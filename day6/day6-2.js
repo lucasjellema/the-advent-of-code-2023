@@ -47,13 +47,13 @@ const produceResult = () => {
 }
 
 const inputDoc2 = {
-    Time: `7 15 30`
-    , Distance: `9 40 200`
+    Time: `71530`
+    , Distance: `940200`
 }
 
 const inputDoc = {
-    Time: `41 66 72 66`
-    , Distance: `244 1047 1228 1040`
+    Time: `41667266`
+    , Distance: `244104712281040`
 }
 
 
