@@ -5,10 +5,10 @@ const processHistory = (history) => {
     }
     
     if (deltas.filter(e => e!=0).length == 0) {       
-       return history[history.length-1]
+       return history[0]
     } else {
         const nextDelta = processHistory(deltas)
-        return history[history.length-1] + nextDelta
+        return history[0] - nextDelta
     }
 }
 
@@ -17,6 +17,7 @@ const produceResult = () => {
     let total = 0
     for (const line of lines){
        total += processHistory(line.split(' ').map((e) => parseInt(e)))
+       
     }
 console.log(`total of all history extensions ${total}`)
 }
